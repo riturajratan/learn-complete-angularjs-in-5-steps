@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step 1 Demo  For AngularJS</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="../js/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<body >
+     <div class="container">
+	<div class="jumbotron">
+     <img  src="../images/maddyzone-logo-300x72.png" >
+     <br/>
+		<h1>Angular JS part 2 DEMO</h1>
+		<br/>
+		<div ng-app="myApp"><!-- set module so anular know here angular start with this module-->
+    <div ng-controller="BasicCtrl"> <!-- here MainCtrl call of myApp module -->
+         {{ testText }} <!-- this is the magic of $scope now here $scope.testText come .this is the $Scope which we can directly access in controller -->
+    </div>
+</div>
+    </div>
+    </div>
+
+</body>
+</html>
