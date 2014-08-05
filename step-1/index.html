@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step 1 Demo  For AngularJS</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="../js/angular.min.js"></script>
+</head>
+<body>
+
+<body ng-app=""><!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on html tag ) -->
+     <div class="container">
+	<div class="jumbotron">
+     <img  src="../images/maddyzone-logo-300x72.png" >
+     <br/>
+		<h1>Angular JS part 1 DEMO</h1>
+		<br/>
+		<h3>Type on below input box to see AngularJS</h3>
+     <input type="text" ng-model="testName" placeholder="Enter a name here">
+      <h1>Hello, {{ testName }}!</h1> 
+    </div>
+    </div>
+
+</body>
+</html>
