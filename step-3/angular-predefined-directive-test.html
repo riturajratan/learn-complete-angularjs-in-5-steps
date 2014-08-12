@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step 1 Demo  For AngularJS</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="../js/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<body >
+ <div class="container">
+    <div class="jumbotron">
+     <img  src="../images/maddyzone-logo-300x72.png" >
+     <br/>
+        <h1>Angular JS part 3 DEMO for predefined directive </h1>
+        <br/>
+    <div ng-app="myApp"><!-- apply module on div -->
+        <ul ng-controller="MainCtrl" > <!-- apply controller -->
+            <li  ng-repeat="user in userList"> <!-- magic of ng-repeat-->
+                {{ user }}
+            </li>
+        </ul>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
