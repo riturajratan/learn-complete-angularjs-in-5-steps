@@ -10,7 +10,11 @@ app.directive('hellotest', function() {
   return {
       restrict: 'AE',
       replace: 'true',
-      template: '<h3>Hello World!!</h3>'
+      template: '<h3>Hello World!!</h3>',// good for tiny piece html
+      templateUrl:"url path"// good for large html file 
+        link: function (scope, element, attrs) {
+      // DOM manipulation/events here!
+    }
   };
 });
 
@@ -84,7 +88,7 @@ and match with our hellotest Directive
 
  replace : it is working as a boolean if it is true then at the palace of helloTest we will see <h1>test</h1> and if set false then we will see <hell-test><h1>test</h1></hello-test>
  
- link---
+ link--- // DOM manipulation/events here!
  
  compile---
 
