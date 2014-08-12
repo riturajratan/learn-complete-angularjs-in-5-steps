@@ -80,9 +80,13 @@ and match with our hellotest Directive
  		by 
  		A: use as Attribute
  		E: use as Element
+ 		M for Comment
  		C use as class
  		AE use as Element or Atribute
  		AEC use as element ,attribute or class
+ 		and ...many more 
+
+ 		'EA' is default . but we can can restrict to multiple use cases.
 
  template: byt his we set html at the palace of directive like in templet:<h1>test</h1> then at the palace of direective repace by this and we html is too large then we set this html in a seprate file and use templateUrl at the palace of template
 
