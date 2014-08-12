@@ -1,0 +1,97 @@
+Directive make as controller make in angular js 
+
+and its retrun a object inw hich many properties and function are exist
+
+lets start with a simple example 
+
+var myapp = angular.module('myapp', []);
+ 
+app.directive('hellotest', function() {
+  return {
+      restrict: 'AE',
+      replace: 'true',
+      template: '<h3>Hello World!!</h3>'
+  };
+});
+
+by the directive we registered the directive in angular JS
+
+so in the directive thare are two argument 
+ 
+ 1) 'helloTest' = by this it  registered with helloTest name
+ 2)function (){return ..} = it retrun a directive function object
+ note : if we want to use some service or object then we can use here 
+ 
+ like 
+ 
+ $rootScope = behave as a global variables in AngularJs
+ $http = same like 4.ajax in jQuery (get ,post and many more submethod exist in this)
+ $scope= as we discuss previous
+
+
+now in the html we like below 
+
+1)As an Element
+
+<hello-test></hello-test>  or <hello-test/>
+
+and 
+
+<hello:test />
+
+2)As an Attribute 
+
+<div hello-test></div>
+
+or 
+
+<div hello:test></div>
+
+if we are working with HTML 5 Compliment then we can set this by x- or data- prefix like below
+
+<div x-hello-test></div>
+
+<div data-hello-test></div>
+
+when we apply html 5 complement then angular see x- and data- then it convert into - and : then convert into Camel case to match with directive 
+
+so how it match exactly with our directive 
+
+like below
+
+x-hello-test or data-hello-test
+
+then 
+hello-test or hello:test
+
+then last change to helloTest
+
+and match with our hellotest Directive
+ :)
+
+ there are many properties to set directive lets go to one by one
+
+ restrict= by this we set that how the directive is used in HTMl 
+ 		like 
+ 		by 
+ 		A: use as Attribute
+ 		E: use as Element
+ 		C use as class
+ 		AE use as Element or Atribute
+ 		AEC use as element ,attribute or class
+
+ template: byt his we set html at the palace of directive like in templet:<h1>test</h1> then at the palace of direective repace by this and we html is too large then we set this html in a seprate file and use templateUrl at the palace of template
+
+ replace : it is working as a boolean if it is true then at the palace of helloTest we will see <h1>test</h1> and if set false then we will see <hell-test><h1>test</h1></hello-test>
+ 
+ link---
+ 
+ compile---
+
+
+ -- 
+
+
+
+
+
