@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Basic closure example </title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+
+<script type="text/javascript" src="../js/angular.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js"></script>
+
+</head>
+<body>
+
+<body ng-app=""><!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on html tag ) -->
+     <div class="container">
+	<div class="jumbotron">
+     <img  src="../images/maddyzone-logo-300x72.png" >
+     <br/>
+		<h1>Basic Closure example</h1>
+		<br/>
+		<h3>Not related to angularJS but it is good if you know about that.</h3>
+	
+	<pre><code>
+
+/** create a function vehicle or can say collection **/
+function vehicle(){
+// method by which "car" string return  
+var car=function(){ return "car"};
+
+// method by which "bus" string return  
+var bus=function(){return "bus"};
+
+//// method by which "bike" string return  
+var bike=function(){return "bike"};
+
+return {
+
+car_call:car,
+
+ bus_call:bus,
+
+bike_call:bike
+
+    }
+}
+/** in vehicle_call we get car_call, bus_call,and bike_call method**/
+var vehicle_Call=vehicle();
+
+// call vehicle car method
+alert(vehicle_Call.car_call());
+
+// call vehicle bus method
+alert(vehicle_Call.bus_call());
+
+// call vehicle bike method
+alert(vehicle_Call.bike_call());
+
+	</code>
+
+	</pre>     
+    </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+/** create a function vehicle or can say collection **/
+function vehicle(){
+// method by which "car" string return  
+var car=function(){ return "car"};
+
+// method by which "bus" string return  
+var bus=function(){return "bus"};
+
+//// method by which "bike" string return  
+var bike=function(){return "bike"};
+
+return {
+
+car_call:car,
+
+ bus_call:bus,
+
+bike_call:bike
+
+    }
+}
+/** in vehicle_call we get car_call, bus_call,and bike_call method**/
+var vehicle_Call=vehicle();
+
+// call vehicle car method
+alert(vehicle_Call.car_call());
+
+// call vehicle bus method
+alert(vehicle_Call.bus_call());
+
+// call vehicle bike method
+alert(vehicle_Call.bike_call());
+hljs.configure({tabReplace: '  '});
+hljs.initHighlightingOnLoad();
+</script>
