@@ -10,3 +10,5 @@ part 1 http://tech-blog.maddyzone.com/javascript/learn-complete-angularjs-in-5-s
 part 2 http://tech-blog.maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-2-5
 
 part 3 http://tech-blog.maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-3-5
+
+part 4 http://tech-blog.maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-4-5
