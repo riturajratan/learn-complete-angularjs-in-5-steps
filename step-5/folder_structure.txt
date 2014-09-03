@@ -1,0 +1,11 @@
+[]step-5    // in this folder we set all files
+
+--- []views // in this folder we set all views html
+
+------ aboutus.html
+------ contact.html
+------ home.html
+
+--- app.js // in this script we set our all code
+
+--- basic-route-example.html // this is main page

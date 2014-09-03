@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Basic Routing Example example</title>
+<title> Basic Routing Example</title>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../css/default.css" />
 
@@ -12,18 +12,20 @@
 
 <body ng-app="myApp"><!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on html tag ) -->
      <div class="container">
-	<div class="jumbotron" ng-controller="RoutCtrl">
+	<div class="jumbotron" >
      <img  src="../images/maddyzone-logo-300x72.png" >
      <br/>
-		<h1>Basic Routing Example example</h1>
+		<h1>Basic Routing Example</h1>
 		<br/>
-		<a ng-click="goto('home')" class="btn btn-primary">Home</a> &nbsp;&nbsp;&nbsp; <a class="btn btn-success" ng-click="goto('about')">About</a>
+		<a href="#home" class="btn btn-primary">Home</a>
+		<a class="btn btn-success" href="#about">About</a>
+	    <a class="btn btn-danger" href="#contact">Contact</a>
+
 
 	<br/>
 	<br/>
 
 		<div ng-view="">
-		<div style="font-size: 32px" class="label label-success" >See here when click , content chnage due to routing</div>
 		</div>
 
     </div>
